@@ -1,4 +1,4 @@
-  
+  证书校验链接 https://github.com/fuchanghai/license-verify.git
 1.单机模式
 用狗 即加密狗
 手持u盘，盘里面是证书，验证通过才能操作
