@@ -7,7 +7,7 @@
 2.java license
 
 一	生成私钥、公钥库
-		1、首先要用KeyTool工具来生成私匙库：（-alias别名 –validity 3650表示10年有效）
+		1、首先要用KeyTool工具来生成私匙库：（-alias别名 –validity 3650表示10年有效） keysize 不加的话 默认2048  会报错
 	keytool -genkey -alias privatekey -keysize 1024  -keystore privateKeys.store -validity 3650
 	 
 	2、然后把私匙库内的公匙导出到一个文件当中：
@@ -18,6 +18,7 @@
 	 
 	最后生成文件privateKeys.store、publicCerts.store拷贝出来备用。
 	
+eg：密码一定要6位 并且数字和密码都要有，我去看了一下源码 不满足会爆密码不符合条件
 	
 二 将公钥放入校验模块中，将私钥放入证书生成模块中
 
